@@ -36,8 +36,8 @@ regd_users.post("/login", (req,res) => {
     return res.status(200).json({message: "User successfully logged in."})
   }
   else {
-    return res.status(300).json({message: "Username and password do not match our records. Please try again."});
-  }
+    return res.status(208).send("Invalid Login. Check username and password");
+}
 });
 
 regd_users.put("/auth/review/:isbn", (req, res) => {
