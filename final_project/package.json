@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "vite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
   },
@@ -15,5 +16,8 @@
     "express-session": "^1.17.3",
     "jsonwebtoken": "^8.5.1",
     "nodemon": "^2.0.19"
+  },
+  "devDependencies": {
+    "vite": "^4.3.9"
   }
 }
